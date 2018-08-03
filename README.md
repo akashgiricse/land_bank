@@ -17,9 +17,9 @@ Dependencies:
 
 ### 1. Clone this repository
 ```bash
-git clone https://github.com/akashgiricse/village-data.git
-# in the cloned directory goto village_data directory i.e.
-cd village_data
+git clone https://github.com/akashgiricse/land_bank.git
+# in the cloned directory goto land_bank directory i.e.
+cd land_bank
 ```
 
 ### 2. Install the [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/)
@@ -27,14 +27,14 @@ Follow [instructions on official documentation page](https://virtualenvwrapper.r
 
 ### 3. Create the virtualenv
 ```bash
-## run following command from `village_data` directory
-mkvirtualenv village_data -a "$(pwd)" -p python3.6
+## run following command from `land_bank` directory
+mkvirtualenv land_bank -a "$(pwd)" -p python3.6
 ```
 
 ### 4. Install python packages
 ```bash
 ## Activate the virtualenv which you created on the last step (should be automatically activated)
-workon village_data
+workon land_bank
 cd ..
 pip install -r requirements.txt
 ```
@@ -44,7 +44,7 @@ pip install -r requirements.txt
 
 ### 6. Run database migrations
 ```bash
-cd village_data
+cd land_bank
 python manage.py migrate
 ```
 
