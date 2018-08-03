@@ -11,7 +11,7 @@ class VillageAdmin(admin.ModelAdmin):
 
 class PlotAdmin(admin.ModelAdmin):
 	model = Plot
-	list_display = ['gata_number', 'village','connectivity', 'allotted', 'shreni']
+	list_display = ['gata_number', 'village','connectivity', 'allotted', 'shreni', 'area', 'distance_road']
 	list_filter = ['connectivity', 'allotted', 'shreni']
 	search_fields = ['village__name','gata_number']
 
