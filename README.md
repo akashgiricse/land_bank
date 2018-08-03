@@ -35,7 +35,6 @@ mkvirtualenv land_bank -a "$(pwd)" -p python3.6
 ```bash
 ## Activate the virtualenv which you created on the last step (should be automatically activated)
 workon land_bank
-cd ..
 pip install -r requirements.txt
 ```
 
@@ -44,7 +43,6 @@ pip install -r requirements.txt
 
 ### 6. Run database migrations
 ```bash
-cd land_bank
 python manage.py migrate
 ```
 
