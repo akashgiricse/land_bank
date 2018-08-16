@@ -55,3 +55,6 @@ python manage.py createsuperuser
 ```bash
 python manage.py runserver
 ```
+digital ocean 41000
+dabase backup
+email, one entry .5 mb. sql dump  backup point of view by email 7zip. 1GB, 1CPU, Bengaluru, run db server on same machine enginx front end facing, let's encrypt. 1 month renew, SendGrid 100 emails per day. Drop box for images. Google cloud storage. 300 doller per year. Bucket , s3 12 month free. 
