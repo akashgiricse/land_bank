@@ -7,6 +7,10 @@ class Village(models.Model):
 	name = models.CharField(_('गांव का नाम'), max_length=100, default=None)
 	code = models.IntegerField(_('गांव कोड'), default=None)
 
+	def save(self, *args, **kwargs):
+	    self.name = self.name.upper()
+	    return super(Village, self).save(*args, **kwargs)
+
 	def __str__(self):             
 	    return "%s" % (self.name)
 
@@ -20,6 +24,7 @@ class Plot(models.Model):
 		('5-3-क', '5-3-क'),
 		('5-3-ख', '5-3-ख'),
 		('5-3-ग', '5-3-ग'),
+
 		('5-3-घ', '5-3-घ'),
 		('5-3-ङ', '5-3-ङ'),
 		('5-क(क)', '5-क(क)'),
