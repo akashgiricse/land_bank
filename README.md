@@ -62,3 +62,11 @@ python manage.py createsuperuser
 ```bash
 python manage.py runserver
 ```
+
+### Please note:
+If you add any dependency to your development environment, don't forget to list it in `requirements.txt` file via running
+following command 
+
+```bash
+pip freeze --local > requirements.txt
+```
