@@ -8,11 +8,11 @@
 - [x] Only one image is needed
 - [x] Proper spelling use should be done.
 - [x] Image size  14 GB for 1 img per plot and 28 gb for 2 img per plot (so decide plan for hosting)
-- [ ] PDF generation of the query(Vishal)
+- [x] PDF generation of the query.
 - [ ] Print out facility for every query(Vishal)
-- [x] Modify shreni names (Akash Giri)
+- [ ] Modify shreni names (Akash Giri)
 - [x] 9000-10000 rows will be there in database.
-- [ ] Capitalize name of village before saving to database. (Vishal)
+- [x] Capitalize name of village before saving to database.
 - [ ] Automatic image compression(size of image<500). (Vishal)
 - [ ] Get full detail of Digital Ocean pricing. (Shukla)
 
