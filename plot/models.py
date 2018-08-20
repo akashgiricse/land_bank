@@ -15,10 +15,22 @@ class Plot(models.Model):
 	village = models.ForeignKey(Village, on_delete=models.CASCADE)
 
 	SHRENI_CHOICES = (
-		('5', '5'),
-		('6', '6')
+		('5-1', '5-1'),
+		('5-2', '5-2'),
+		('5-3-क', '5-3-क'),
+		('5-3-ख', '5-3-ख'),
+		('5-3-ग', '5-3-ग'),
+		('5-3-घ', '5-3-घ'),
+		('5-3-ङ', '5-3-ङ'),
+		('5-क(क)', '5-क(क)'),
+		('5-क(ख)', '5-क(ख)'),
+		('5-क(ग)', '5-क(ग)'),
+		('6-1', '6-1'),
+		('6-2', '6-2'),
+		('6-3', '6-3'),
+		('6-4', '6-4')
 	)
-	shreni = models.CharField(_('श्रेणी'),max_length=1, choices=SHRENI_CHOICES)
+	shreni = models.CharField(_('श्रेणी'),max_length=10, choices=SHRENI_CHOICES)
 	gata_number = models.CharField(_('गाटा संख्या'), max_length=50, default=None)
 	area = models.FloatField(_('क्षेत्रफल (हैक्‍टेयर)'),default=None)
 	distance_road = models.FloatField(_('सड़क से दूरी (कि.मी.)'), default=None)
