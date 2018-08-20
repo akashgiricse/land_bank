@@ -12,7 +12,7 @@
 - [ ] Print out facility for every query(Vishal)
 - [ ] Modify shreni names (Giri)
 	- [ ] There are two shreni 5,6
-	- [ ] These two shrenies have sub shrenies
+	- [ ] Do not make sub shrenis. List out all the shrenis of both categories 5 and 6 in dropdown.
 - [x] 9000-10000 rows will be there in database.
 - [ ] Capitalize name of village before saving to database. (Vishal)
 - [ ] Add plugin for history. (Giri)
