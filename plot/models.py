@@ -26,8 +26,7 @@ class Plot(models.Model):
 	allotted = models.BooleanField(_('आवंटित'), default=False)
 	latitude_coordinate = models.CharField(_('अक्षांश निर्देशांक'), max_length=15, default=None)
 	longitude_coordinate = models.CharField(_('देशांतर निर्देशांक'), max_length=15, default=None)
-	image1 = models.ImageField(upload_to='images/', null=True, blank=True)
-	image2 = models.ImageField(upload_to='images/', null=True, blank=True)
+	image = models.ImageField(upload_to='images/', null=True, blank=True)
 	created_date = models.DateTimeField(auto_now_add=True, editable=False)
 	modified_date = models.DateTimeField(auto_now=True)
 
