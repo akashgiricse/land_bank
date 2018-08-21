@@ -24,9 +24,18 @@ class ShreniAdmin(admin.ModelAdmin):
 class PlotAdmin(admin.ModelAdmin):
     model = Plot
     actions = ['download_csv', 'download_excel']
-    list_display = ['gata_number', 'village', 'connectivity', 'allotted', 'shreni', 'area', 'distance_road']
+    list_display = ['gata_number',
+                    'village',
+                    'connectivity',
+                    'allotted',
+                    'shreni',
+                    'area',
+                    'distance_road',
+                    "shreni_desc"
+                    ]
     list_filter = ['connectivity', 'allotted', 'shreni']
     search_fields = ['village__name', 'gata_number']
+    readonly_fields = ['shreni_desc']
 
     def download_csv(self, request, queryset):
 
