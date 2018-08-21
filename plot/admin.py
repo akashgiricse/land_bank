@@ -86,7 +86,7 @@ class PlotAdmin(admin.ModelAdmin):
         font_style.font.bold = True
 
         # column header names, you can use your own headers here
-        columns = ['No', 'gata_number', 'connectivity', 'allotted', 'shreni', 'area', 'distance_road', ]
+        columns = ['No', 'gata_number', 'village', 'connectivity', 'allotted', 'shreni', 'area', 'distance_road', "shreni_description"]
 
         # write column headers in sheet
         for col_num in range(len(columns)):
@@ -97,16 +97,20 @@ class PlotAdmin(admin.ModelAdmin):
 
         row_num = 1
         for s in queryset:
+            village = str(s.village)
+            shreni = str(s.shreni)
+
             row_num = row_num + 1
             # [s.gata_number, s.village, s.connectivity, s.allotted, s.shreni, s.area, s.distance_road]
             ws.write(row_num, 0, row_num-1, font_style)
             ws.write(row_num, 1, s.gata_number, font_style)
-            # ws.write(row_num, 2, s.village, font_style)
-            ws.write(row_num, 2, s.connectivity, font_style)
-            ws.write(row_num, 3, s.allotted, font_style)
-            ws.write(row_num, 4, s.shreni, font_style)
-            ws.write(row_num, 5, s.area, font_style)
-            ws.write(row_num, 6, s.distance_road, font_style)
+            ws.write(row_num, 2, village, font_style)
+            ws.write(row_num, 3, s.connectivity, font_style)
+            ws.write(row_num, 4, s.allotted, font_style)
+            ws.write(row_num, 5, shreni, font_style)
+            ws.write(row_num, 6, s.area, font_style)
+            ws.write(row_num, 7, s.distance_road, font_style)
+            ws.write(row_num, 8, s.shreni_desc, font_style)
 
         wb.save(response)
         return response
