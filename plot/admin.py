@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Village, Plot
+from .models import Village, Plot, Shreni
 from django.http import HttpResponse
 
 import csv
@@ -13,6 +13,12 @@ class VillageAdmin(admin.ModelAdmin):
     model = Village
     list_display = ['name', 'code']
     search_fields = ['name', 'code']
+
+
+class ShreniAdmin(admin.ModelAdmin):
+    model = Shreni
+    list_display = ['shreni', 'shreni_description']
+    search_fields = ['shreni', 'shreni_description']
 
 
 class PlotAdmin(admin.ModelAdmin):
@@ -101,3 +107,4 @@ class PlotAdmin(admin.ModelAdmin):
 
 admin.site.register(Village, VillageAdmin)
 admin.site.register(Plot, PlotAdmin)
+admin.site.register(Shreni, ShreniAdmin)
