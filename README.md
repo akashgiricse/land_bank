@@ -10,7 +10,7 @@
 - [x] Image size  14 GB for 1 img per plot and 28 gb for 2 img per plot (so decide plan for hosting)
 - [x] PDF generation of the query.
 - [ ] Print out facility for every query(Vishal)
-- [ ] Modify shreni names (Akash Giri)
+- [x] Modify shreni names (Akash Giri)
 - [x] 9000-10000 rows will be there in database.
 - [x] Capitalize name of village before saving to database.
 - [ ] Automatic image compression(size of image<500). (Vishal)
