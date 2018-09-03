@@ -29,7 +29,7 @@ class Plot(models.Model):
     shreni = models.ForeignKey(Shreni, on_delete=models.CASCADE)
     gata_number = models.CharField(_('गाटा संख्या'), max_length=50, default=None)
     area = models.FloatField(_('क्षेत्रफल (हैक्‍टेयर)'), default=None)
-    shreni_desc = models.TextField()
+    shreni_desc = models.TextField(_('श्रेणी विवरण'))
     distance_road = models.FloatField(_('सड़क से दूरी (कि.मी.)'), default=None)
     connectivity = models.BooleanField(_('कनेक्टिविटी'))
     allotted = models.BooleanField(_('आवंटित'), default=False)
